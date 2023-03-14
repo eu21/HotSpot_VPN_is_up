@@ -18,7 +18,8 @@ REM END USER EDITABLE PARAMETERS
 cls
 
 @echo on
-netsh interface ipv4 show interfaces | FIND "Ethernet 2" /I /C >var
+REM netsh interface ipv4 show interfaces | FIND "Ethernet 2" /I /C >var
+netsh interface ipv4 show interfaces | FIND "HssStore 1" /I /C >var
 @echo off
 cls
 
