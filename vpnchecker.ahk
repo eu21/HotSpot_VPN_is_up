@@ -5,7 +5,7 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
  
 #NoTrayIcon
 #Persistent
-#SingleInstance force
+#SingleInstance Ignore
  
 global script
  

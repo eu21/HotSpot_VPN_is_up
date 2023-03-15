@@ -50,10 +50,13 @@ tasklist | find /I "%exefile%" > nul
 IF %ERRORLEVEL% EQU 0 (
 echo                --== %exefile% Is Running, KILLING NOW ==--
 echo.
+:: stop firefox instances
+taskkill /IM "%exefile%" > nul
+taskkill /IM "%exefile%" > nul
 taskkill /IM "%exefile%" > nul
 ::wmic process where "commandline like '%script.bat%'" get name
 wmic process where "commandline like 'vpnchecker.bat'" call terminate
-taskkill /IM "vpnchecker.exe" > nul
+
 )
 
 echo                     --== Checking VPN Again ==--
