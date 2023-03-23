@@ -14,7 +14,7 @@ global script
 */
 Menu Tray, NoStandard
 Menu Tray, Icon
-Menu Tray, Icon, vpn_on_icon.ico
+Menu Tray, Icon, Icons\vpn_on_icon.ico
 Menu Tray, Add, Show / Hide, TrayClick
 Menu Tray, Add, Close, CloseItem
 Menu Tray, Default, Show / Hide
